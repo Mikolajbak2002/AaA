@@ -15,6 +15,7 @@
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./sass/main.css" /> -->
     <title>WebStudio</title>
   </head>
   <body>
@@ -23,6 +24,41 @@
         <a class="header__logo" href="index.html"
           ><span class="logo--blue">Web</span>Studio</a
         >
+        <!----------- mobile menu -------->
+        <button class="menu-open">
+          <svg class="menu-burger" width="24" height="16">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu d-none">
+          <button class="toggle-menu">
+            <svg class="menu-close" width="19" height="19">
+              <use href="./images/icons.svg#menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile__nav">
+            <li class="mobile__item mobile__item--blue">
+              <a href="index.html">Agencja</a>
+            </li>
+            <li class="mobile__item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="mobile__item"><a href="#">Kontakt</a></li>
+          </ul>
+          <ul class="mobile-contacts__list">
+            <li class="mobile-contacts__item--tel">
+              <a href="tel:+48-111-111-111">+48 111 111 111</a>
+            </li>
+            <li class="mobile-contacts__item--mail">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-links__list">
+            <li class="mobile-links__item"><a href="#">Instagram</a></li>
+            <li class="mobile-links__item"><a href="#">Twitter</a></li>
+            <li class="mobile-links__item"><a href="#">Facebook</a></li>
+            <li class="mobile-links__item"><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        <!-------- mobile menu ends ---------->
         <nav>
           <ul class="navigation">
             <li class="navigation__underline">
@@ -36,7 +72,7 @@
         </nav>
         <ul class="contacts">
           <li>
-            <a class="contacts__item" href="mailto:info@example.com">
+            <a class="contacts__item" href="mailto:info@devstudio.com">
               <svg class="contacts__item--icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -67,6 +103,7 @@
             data-modal-open
           />
         </div>
+        <!-------------------------- Backdrop ------------------------->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="modal__button" data-modal-close>
@@ -132,6 +169,7 @@
             </div>
           </div>
         </div>
+        <!-------------------------- Backdrop ends ---------------------------------->
       </section>
       <section>
         <div class="container">
@@ -188,7 +226,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="what-we-do">
         <div class="container">
           <h2 class="secondary__header">Czym się zajmujemy</h2>
           <ul class="job-list">
@@ -235,10 +273,9 @@
           <li>
             <figure class="workers__figure">
               <img
-                src="./images/photo1.jpg"
+                src="./images/photo1-mobile.jpg"
                 alt="uśmiechnięty pracownik"
-                width="270"
-                height="260"
+                width="450"
               />
               <figcaption class="workers__caption">
                 <h4 class="workers__name">John Doe</h4>
@@ -281,8 +318,7 @@
               <img
                 src="./images/photo2.jpg"
                 alt="uśmiechnięta pracownica"
-                width="270"
-                height="260"
+                width="450"
               />
               <figcaption class="workers__caption">
                 <h4 class="workers__name">John Doe</h4>
@@ -325,8 +361,7 @@
               <img
                 src="./images/photo3.jpg"
                 alt="uśmiechnięty pracownik"
-                width="270"
-                height="260"
+                width="450"
               />
               <figcaption class="workers__caption">
                 <h4 class="workers__name">John Doe</h4>
@@ -369,8 +404,7 @@
               <img
                 src="./images/photo4.jpg"
                 alt="uśmiechnięty pracownik"
-                width="270"
-                height="260"
+                width="450"
               />
               <figcaption class="workers__caption">
                 <h4 class="workers__name">John Doe</h4>
@@ -516,5 +550,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
