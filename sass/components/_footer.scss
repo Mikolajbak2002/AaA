@@ -83,11 +83,13 @@
   .footer__form {
     text-align: left;
     margin: 0;
+    // margin-left: 78px;
   }
   .footer__button {
-    // position: absolute;
-    // top: 16px;
-    // left: 400px;
+    margin-left: 12px;
+  }
+  .footer-input__wrapper {
+    display: flex;
   }
   .footer__input {
     width: 358px;
@@ -95,8 +97,10 @@
   .footer__icon-send {
     fill: var(--main-color);
     position: relative;
-    bottom: 35px;
-    left: 524px;
-    display: none;
+    top: 35px;
+    right: 60px;
+  }
+  .footer-logo__wrapper {
+    margin-right: 70px;
   }
 }

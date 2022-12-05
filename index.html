@@ -489,7 +489,7 @@
     </main>
     <footer>
       <div class="container container--footer">
-        <div>
+        <div class="footer-logo__wrapper">
           <a class="footer__logo" href="#"
             ><span class="logo--blue">Web</span>Studio</a
           >
@@ -543,14 +543,21 @@
           </ul>
         </div>
         <form class="footer__form">
-          <label class="footer__label">
+          <label for="email" class="footer__label">
             Zapisz się do newslettera
-            <input class="footer__input" placeholder="E-mail" type="email" />
+          </label>
+          <div class="footer-input__wrapper">
+            <input
+              id="email"
+              class="footer__input"
+              placeholder="E-mail"
+              type="email"
+            />
             <input class="footer__button" type="submit" value="Zapisz sie " />
             <svg class="footer__icon-send" width="20" height="20">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
-          </label>
+          </div>
         </form>
       </div>
     </footer>
