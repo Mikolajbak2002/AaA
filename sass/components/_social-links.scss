@@ -34,7 +34,7 @@
 }
 .social-links__wrapper {
   width: 206px;
-  margin-left: 70px;
+  // margin-left: 70px;
 }
 .social-links__header {
   font-family: "Roboto";
@@ -48,15 +48,4 @@
 }
 .social-links__icon--footer {
   background: rgba(255, 255, 255, 0.1);
-}
-@media screen and (max-width: 480px) {
-  .social-links__wrapper {
-    width: 206px;
-    margin: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .social-links__wrapper {
-    margin-left: 144px;
-  }
 }

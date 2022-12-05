@@ -1,6 +1,7 @@
 .seciton {
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  padding: 118px 0;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -8,17 +9,17 @@
     url("../images/bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .seciton {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/bg-mobile-x2.jpg");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/bg-mobile@x2.jpg");
+    }
   }
 }
 
@@ -29,18 +30,16 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/bg-tablet.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .seciton {
+    .section {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/bg-tablet-x2.jpg");
+        url("../images/bg-tablet@x2.jpg");
     }
   }
 }
@@ -54,21 +53,6 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/bg-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+      url(../images/bg-img.jpg);
   }
 }
-
-// .seciton {
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   text-align: center;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/bg-img.jpg);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
