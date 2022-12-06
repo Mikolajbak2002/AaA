@@ -83,6 +83,7 @@
   .footer__form {
     text-align: left;
     margin: 0;
+    justify-content: space-between;
     // margin-left: 78px;
   }
   .footer__button {
@@ -99,8 +100,5 @@
     position: relative;
     top: 35px;
     right: 60px;
-  }
-  .footer-logo__wrapper {
-    margin-right: 70px;
   }
 }

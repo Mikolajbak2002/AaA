@@ -39,7 +39,7 @@
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--description-color);
-  flex-wrap: wrap;
+  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .Card {
